@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+
 [[Deprecated("__________USING LAMBDA__SIMPLE____1")]]
 auto autoReturnTypeLambda_1 = [] (auto a, auto b)
 {
