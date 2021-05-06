@@ -38,7 +38,7 @@ auto& returnAutoTypeDeduction_2 (const uint& valueReceived)
 }
 
 [[Deprecated("__________USING AUTOTYPEDEDUCTION______REFERENCE_3")]]
-// remove const usibg const_Cast
+// remove const using const_Cast
 auto& returnAutoTypeDeduction_3 (uint& valueReceived)
 {
 	return (valueReceived);
@@ -55,7 +55,7 @@ int main()
   	std::cout << "Simple auto return type deduction: --> USING AUTOTYPEDEDUCTION__NO__REFERENCE_1 " << returnAutoTypeDeduction_1(var_4) << std::endl;
   	const uint& var_5{var_4};
   	std::cout << "Simple auto return type deduction: --> USING AUTOTYPEDEDUCTION______REFERENCE_2 " << returnAutoTypeDeduction_2(var_5) << std::endl;
-  	//remove const usibg const_Cast
+  	//remove const using const_Cast
   	uint finalVal = const_cast<uint& > (var_5);
   	std::cout << "Simple auto return type deduction: --> USING AUTOTYPEDEDUCTION______REFERENCE_3 " << returnAutoTypeDeduction_3(finalVal) << std::endl;
 	return (0);
