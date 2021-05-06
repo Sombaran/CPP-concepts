@@ -38,8 +38,15 @@ auto& returnAutoTypeDeduction_2 (const uint& valueReceived)
 }
 
 [[Deprecated("__________USING AUTOTYPEDEDUCTION______REFERENCE_3")]]
-// remove const using const_Cast
+// remove const usibg const_Cast
 auto& returnAutoTypeDeduction_3 (uint& valueReceived)
+{
+	return (valueReceived);
+}
+
+[[Deprecated("__________USING AUTOTYPEDEDUCTION______REFERENCE_4")]]
+// remove const using const_Cast
+decltype(auto) returnAutoTypeDeduction_4 (uint& valueReceived)
 {
 	return (valueReceived);
 }
@@ -58,5 +65,6 @@ int main()
   	//remove const using const_Cast
   	uint finalVal = const_cast<uint& > (var_5);
   	std::cout << "Simple auto return type deduction: --> USING AUTOTYPEDEDUCTION______REFERENCE_3 " << returnAutoTypeDeduction_3(finalVal) << std::endl;
+  	std::cout << "Simple auto return type deduction: --> USING AUTOTYPEDEDUCTION______REFERENCE_4 " << returnAutoTypeDeduction_4(finalVal) << std::endl;
 	return (0);
 }
