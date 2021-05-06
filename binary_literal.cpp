@@ -17,7 +17,7 @@ int main()
 {
 	uint binVar_1 {0B1111'1111}, binVar_2 {0b1111'1111}; //binary literal
 	uint hexaVal {0x13ac};
-  uint octaVal {0117}; 
+        uint octaVal {0117}; 
 	std::cout << "Binary literal with prefix /'0B/' " << genericLiteral(binVar_1) << std::endl;
 	std::cout << "Binary literal with prefix /'0b/' " << genericLiteral(binVar_2) << std::endl;
 	std::cout << "Hexadecimal literal with prefix /'0x/' " << genericLiteral(hexaVal) << std::endl;
