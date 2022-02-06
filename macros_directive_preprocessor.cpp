@@ -36,7 +36,7 @@
 
 #pragma once
 
-#define str(x) 					        #x
+#define str(x)                  #x
 #define someargumet(a,b)        a ## b 
 
 int main() {
