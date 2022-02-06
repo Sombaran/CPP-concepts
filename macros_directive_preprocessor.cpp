@@ -15,7 +15,7 @@
  * make a release code then compile using -U _DEBUG if by default debug is defined in line number 35
  * 
  * one can include a header from command line --> just comment out line number 22 
- * g++ macros_D_file_name.cpp -D FLAG=1 -D _DEBUG -include iostream  -o nptel_macro ;./nptel_macro
+ * g++ macros_directive_preprocessor.cpp -D FLAG=1 -D _DEBUG -include iostream  -o nptel_macro
  * 
  * some useful directive
  * #line --> it is used to reset the line number in the code. We can reset line number from any line in the code.
