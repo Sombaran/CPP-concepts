@@ -9,9 +9,9 @@ git pull
 git log
 git commit // for fresh commit
 git commit --amend // for adding changes
-git checkout master
-git fetch origin master
-git rebase -i origin/master
+git checkout main
+git fetch origin main*
+git rebase -i origin/main
 # Squash commits, fix up commit messages etc.
 git push origin master
 # make changes to a repo and git add
