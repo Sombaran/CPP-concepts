@@ -1,5 +1,3 @@
-
-
 /**
  * One can use -D/ -U name to define and un-define a macro from command line 
  * 
